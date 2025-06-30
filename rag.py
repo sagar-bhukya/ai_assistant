@@ -6,6 +6,7 @@ from utils import extract_text_from_pdf, initialize_vector_index, get_response
 # Load environment variables
 load_dotenv()
 google_api_key = os.getenv("GOOGLE_API_KEY")
+print("Google_api_key::->",google_api_key)
 if not google_api_key:
     print("GOOGLE_API_KEY not found in .env file")
     st.error("GOOGLE_API_KEY not found. Please check your .env file.")
